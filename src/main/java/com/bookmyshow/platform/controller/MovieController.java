@@ -16,7 +16,7 @@ public class MovieController {
     private MovieService movieService;
 
     // Add Movies API
-    @PostMapping("/admin/create")
+    @PostMapping("/admin/createMovies")
     public ResponseEntity<MovieDTO> createMovies(@RequestBody MovieDTO movieDTO) {
         MovieDTO savedMovies = movieService.createMovie(movieDTO);
         return new ResponseEntity<>(savedMovies, HttpStatus.CREATED);

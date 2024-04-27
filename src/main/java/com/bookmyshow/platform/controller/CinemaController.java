@@ -16,7 +16,7 @@ public class CinemaController {
     private CinemaService cinemaService;
 
     // Add Cinemas API
-    @PostMapping("/admin/create")
+    @PostMapping("/admin/createCinemas")
     public ResponseEntity<CinemaDTO> createCinemas(@RequestBody CinemaDTO cinemaDTO) {
         CinemaDTO savedCinemas = cinemaService.createCinemas(cinemaDTO);
         return new ResponseEntity<>(savedCinemas, HttpStatus.CREATED);
