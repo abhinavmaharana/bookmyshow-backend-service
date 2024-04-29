@@ -30,6 +30,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .securityMatcher("/api/v1**")
+                .cors(c -> c.configurationSource(corsConfigurationSource()))
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/swagger-ui/index.html").hasRole("USER")
                         .requestMatchers("/api/v1**").hasRole("USER")
