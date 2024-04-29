@@ -11,7 +11,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "http://localhost:5173, https://book-my-show-clone-app.vercel.app")
 @RequestMapping("/api/v1/auth")
 public class UserController {
 

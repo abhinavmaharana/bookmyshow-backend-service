@@ -11,7 +11,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "http://localhost:5173, https://book-my-show-clone-app.vercel.app")
 @RequestMapping("/api/v1/movies")
 public class MovieController {
     private MovieService movieService;
