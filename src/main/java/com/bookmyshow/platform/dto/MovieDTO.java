@@ -18,6 +18,8 @@ public class MovieDTO {
     private String title;
     private String description;
     private String certification;
+    private String posterImg;
+    private String heroBannerImg;
     private List<CastCrew> cast;
     private List<CastCrew> crew;
     private List<Review> reviews;

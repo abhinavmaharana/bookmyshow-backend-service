@@ -51,6 +51,8 @@ public class MovieServiceImpl implements MovieService {
         movie.setTitle(updatedMovie.getTitle());
         movie.setDescription(updatedMovie.getDescription());
         movie.setCertification(updatedMovie.getCertification());
+        movie.setPosterImg(updatedMovie.getPosterImg());
+        movie.setHeroBannerImg(updatedMovie.getHeroBannerImg());
         movie.setCast(updatedMovie.getCast());
         movie.setCrew(updatedMovie.getCast());
         movie.setReviews(updatedMovie.getReviews());
