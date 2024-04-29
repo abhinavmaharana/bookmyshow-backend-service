@@ -50,6 +50,10 @@ public class MovieServiceImpl implements MovieService {
         movie.setId(updatedMovie.getId());
         movie.setTitle(updatedMovie.getTitle());
         movie.setDescription(updatedMovie.getDescription());
+        movie.setCertification(updatedMovie.getCertification());
+        movie.setCast(updatedMovie.getCast());
+        movie.setCrew(updatedMovie.getCast());
+        movie.setReviews(updatedMovie.getReviews());
         movie.setDurationInMinutes(updatedMovie.getDurationInMinutes());
         movie.setLanguage(updatedMovie.getLanguage());
         movie.setReleaseDate(updatedMovie.getReleaseDate());
